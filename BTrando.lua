@@ -1099,23 +1099,6 @@ function setRNGOutcome(event, outcome_value)
 			rng_outcome_value = rng_outcome_value - next_flag_state;
 			rng_outcome_value = rng_outcome_value / 2;
 		end
-		if data.value_type == "value_to_outcome" then
-			if data.values[outcome_value] ~= nil then
-				return "Set saved data of RNG Event "..event.." to "..data.values[outcome_value];
-			else
-				return "Set saved data of RNG Event "..event.." to Unknown ("..outcome_value..")";
-			end
-		elseif data.value_type == "outcome_to_value" then
-			local data_outcome = "";
-			for i = 1, #data.values do
-				for j = 1, #data.values[i].values do
-					if outcome_value == data.values[i].values[j] then
-						data_outcome = data.values[i].outcome;
-					end
-				end
-			end
-			return "Set saved data of RNG Event "..event.." to "..data_outcome;
-		end
 	end
 	return "Invalid RNG Event"
 end
@@ -1480,9 +1463,9 @@ end
 
 signCoolDown = 0;
 
-function signPostTalk()
+function signPostTalk(bol)
     --[0x75] = "Locked", -- Signpost  thinking value 0x50 or 80
-    if (getAnimationValue() == 80 or getAnimationValue() == 38) and signCoolDown >=500 then
+    if  bol and signCoolDown >=500 then
         signCoolDown=0;
         local xpos = getXPosition();
         local zpos = getZPosition();
@@ -1804,16 +1787,14 @@ while true do
         
 
         local inputs = joypad.get();
-
         if inputs["P1 DPad U"] then
             bossesMessage();
         end
         if inputs["P1 DPad D"] then
             moveMessage();
         end
-        if inputs["P1 B"] then
-            signPostTalk();
-        end
+        signPostTalk(inputs["P1 B"]);
+
     end
 
     messageBox();
