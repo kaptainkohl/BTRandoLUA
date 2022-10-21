@@ -3,7 +3,7 @@
 -- Credits: Isotarge and authours of bt.lua Scripthawk module for flags and memory addresses, along with some ram methods. Hyperresonace for planing ideas. MumboToken for motavation to build the script with his Spreadsheet Rando.
 
 --How to Use:
--- Load a Banjo-Tooie (USA) rom bishawk 
+-- Load a Banjo-Tooie (USA) rom bizhawk 
 -- Open the Lua console.
 -- Press open script and select this file.
 -- Hover over the file you want to play on the main menu.
@@ -21,7 +21,7 @@ jiggies = {
 {byte=0x45, bit=4, name="MT: Treasure Chamber", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "MT Main Area", location = {"MT"}, using={} , require={{"Egg Aim","Grip Grab"},{"Egg Aim","Mumbo MT"},{"Egg Aim","Bill Drill"}}},
 {byte=0x45, bit=5, name="MT: Jade Snake Grove: Golden Goliath", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "MT JSG", location = {"MT"}, using={} , require={{"Mumbo MT"}}},
 {byte=0x45, bit=6, name="MT: Prison Compound Quicksand", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "MT PC", location = {"MT"}, using={} , require={{"Grip Grab","Mumbo MT"},{"Grip Grab","Grenade Eggs"}}},
-{byte=0x45, bit=7, name="MT: Pillars", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "MT", location = {"MT PC"}, using={} , require={{"Bill Drill","Mumbo MT"},{"Bill Drill","Grenade Eggs"}}},
+{byte=0x45, bit=7, name="MT: Pillars", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "MT", location = {"MT PC"}, using={} , require={{"Bill Drill","Mumbo MT"},{"Bill Drill","Grenade Eggs"},{"Clockwork Kazooie Eggs","Egg Aim"}}},
 {byte=0x46, bit=0, name="MT: Top of Temple", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "MT Main Area", location = {}, using={} , require={{}}},
 {byte=0x46, bit=1, name="MT: Ssslumber", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "MT", location = {"MT JSG"}, using={} , require={{"Mumbo MT"}}},
 {byte=0x46, bit=2, name="GGM: Old King Coal", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GGM Caves", location = {"GGM"}, using={} , require={{"Mumbo GGM"}}},
@@ -29,16 +29,16 @@ jiggies = {
 {byte=0x46, bit=4, name="GGM: Generator Cavern", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GGM Caves", location = {"GGM"}, using={} , require={{}}},
 {byte=0x46, bit=5, name="GGM: Waterfall Cavern", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GGM Caves", location = {"GGM"}, using={} , require={{}}},
 {byte=0x46, bit=6, name="GGM: Ordnance Storage", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GGM Main Area", location = {"GGM"}, using={} , require={{"Breegull Blaster","Beak Bayonet","Bill Drill"},{"Breegull Blaster","Beak Bayonet","Detonator"}}},
-{byte=0x46, bit=7, name="GGM: Dilberta", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GGM Main Area", location = {"GGM"}, using={} , require={{"Bill Drill","Mumbo MT"},{"Bill Drill","Grenade Eggs"}}},
+{byte=0x46, bit=7, name="GGM: Dilberta", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GGM Main Area", location = {"GGM"}, using={} , require={{"Bill Drill","Mumbo MT"},{"Bill Drill","Grenade Eggs"},{"Bill Drill","Clockwork Kazooie Eggs"}}},
 {byte=0x47, bit=0, name="GGM: Crushing Shed", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GGM Main Area", location = {"GGM"}, using={} , require={{"Mumbo GGM"}}},
-{byte=0x47, bit=1, name="GGM: Waterfall", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GGM Main Area", location = {"GGM"}, using={} , require={{"Springy Step Shoes"}}},
+{byte=0x47, bit=1, name="GGM: Waterfall", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GGM Main Area", location = {"GGM"}, using={} , require={{"Springy Step Shoes"},{"Clockwork Kazooie Eggs","Egg Aim"}}},
 {byte=0x47, bit=2, name="GGM: Power Hut Basement", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GGM Caves", location = {"GGM"}, using={} , require={{"Bill Drill"},{"Detonator"}}},
 {byte=0x47, bit=3, name="GGM: Flooded Caves", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GGM Caves", location = {"GGM"}, using={} , require={{}}},
-{byte=0x47, bit=4, name="WW: Hoop Hurry", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "WW Western Zone", location = {"WW"}, using={} , require={{"Egg Aim","Split Up","Grenade Eggs"}}},
+{byte=0x47, bit=4, name="WW: Hoop Hurry", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "WW Western Zone", location = {"WW"}, using={} , require={{"Egg Aim","Split Up","Grenade Eggs"},{"Egg Aim","Split Up","Clockwork Kazooie Eggs"}}},
 {byte=0x47, bit=5, name="WW: Dodgems", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "WW Space Zone", location = {"WW"}, using={} , require={{"Van","Mumbo WW"}}},
 {byte=0x47, bit=6, name="WW: Mr. Patch", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "WW Main Area", location = {"WW"}, using={} , require={{"Egg Aim","Airborne Egg Aiming","Grenade Eggs"}}},
 {byte=0x47, bit=7, name="WW: Saucer of Peril", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "WW Space Zone", location = {"WW"}, using={} , require={{"Van","WW Mumbo","Detonator","Grip Grab"}}},
-{byte=0x48, bit=0, name="WW: Balloon Burst", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "WW Western Zone", location = {"WW"}, using={} , require={{"Egg Aim","Airborne Egg Aiming","Split Up","Grenade Eggs"}}},
+{byte=0x48, bit=0, name="WW: Balloon Burst", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "WW Western Zone", location = {"WW"}, using={} , require={{"Egg Aim","Airborne Egg Aiming","Split Up","Grenade Eggs"},{"Egg Aim","Airborne Egg Aiming","Split Up","Clockwork Kazooie Eggs"}}},
 {byte=0x48, bit=1, name="WW: Dive of Death", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "WW Main Area", location = {"WW"}, using={} , require={{}}},
 {byte=0x48, bit=2, name="WW: Mrs. Boggy", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "WW Main Area", location = {"WW"}, using={} , require={{"Split Up","Van","Taxi Pack"}}},
 {byte=0x48, bit=3, name="WW: Star Spinner", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "WW Space Zone", location = {"WW"}, using={} , require={{"Van","Mumbo WW"}}},
@@ -47,8 +47,8 @@ jiggies = {
 {byte=0x48, bit=6, name="JRL: Mini-Sub Challenge", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "JRL Deep Sea", location = {"JRL"}, using={} , require={{"Sub"}}},
 {byte=0x48, bit=7, name="JRL: Tiptup", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "JRL Town", location = {"JRL"}, using={} , require={{"Split Up","Hatch"}}},
 {byte=0x49, bit=0, name="JRL: Chris P. Bacon", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "JRL Atlantis", location = {"JRL"}, using={} , require={{"Sub-Aqua Egg Aiming"},{"Sub","Egg Aim"}}},
-{byte=0x49, bit=1, name="JRL: Piglet's Pool", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "JRL Town", location = {"JRL","HFP","CCL"}, using={} , require={{}}},
-{byte=0x49, bit=2, name="JRL: Smuggler's Cavern", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "JRL Town", location = {"JRL"}, using={} , require={{"Glide","Split Up"}}},
+{byte=0x49, bit=1, name="JRL: Piglet's Pool", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "JRL Town", location = {"JRL","HFP","CCL"}, using={} , require={{"Grenade Eggs"},{"Bill Drill"},{"Clockwork Kazooie Eggs"}}},
+{byte=0x49, bit=2, name="JRL: Smuggler's Cavern", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "JRL Town", location = {"JRL"}, using={} , require={{"Glide","Split Up"},{"Clockwork Kazooie Eggs","Egg Aim"}}},
 {byte=0x49, bit=3, name="JRL: Merry Maggie Malpass", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "JRL Town", location = {"JRL"}, using={} , require={{"Sub-Aqua Egg Aiming"}}},
 {byte=0x49, bit=4, name="JRL: Lord Woo Fak Fak", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "JRL Deep Sea", location = {"JRL"}, using={} , require={{"Sub-Aqua Egg Aiming","Grenade Eggs","Sub"},{"Sub-Aqua Egg Aiming","Grenade Eggs","Mumbo JRL"}}},
 {byte=0x49, bit=5, name="JRL: Seemee", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "JRL Atlantis", location = {"JRL"}, using={} , require={{"Talon Torpedo"}}},
@@ -64,7 +64,7 @@ jiggies = {
 {byte=0x4A, bit=7, name="TDL: Stomping Plains", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "TDL Top", location = {"TDL"}, using={} , require={{"Springy Step Shoes"}}},
 {byte=0x4B, bit=0, name="TDL: Rocknut Tribe", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "TDL Main Area", location = {"TDL"}, using={} , require={{"Egg Aim","Clockwork Kazooie Eggs"}}},
 {byte=0x4B, bit=1, name="TDL: Code of the Dinosaurs", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "TDL Main Area", location = {"TDL"}, using={} , require={{"Trex"}}},
-{byte=0x4B, bit=2, name="GI: Waste Disposal Underwater", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Toxic Waste", location = {"GI"}, using={} , require={{"Taxi Pack","Pack Whack"}}},
+{byte=0x4B, bit=2, name="GI: Waste Disposal Underwater", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Toxic Waste", location = {"GI"}, using={} , require={{"Bill Drill","Washer","Claw Clamber Boots","Taxi Pack","Pack Whack","Mumbo GI","Fire Eggs","Shack Pack"},{"Bill Drill","Washer","Claw Clamber Boots","Taxi Pack","Pack Whack","Mumbo GI","Grenade Eggs","Shack Pack"}}},
 {byte=0x4B, bit=3, name="GI: Weldar", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Washer", location = {"GI"}, using={} , require={{"Bill Drill","Washer","Claw Clamber Boots","Taxi Pack","Pack Whack","Mumbo GI","Fire Eggs"},{"Bill Drill","Washer","Claw Clamber Boots","Taxi Pack","Pack Whack","Mumbo GI","Grenade Eggs"}}},
 {byte=0x4B, bit=4, name="GI: Clinker's Cavern", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Top Floors", location = {"GI"}, using={} , require={{"Breegull Blaster","Claw Clamber Boots","Mumbo GI"}}},
 {byte=0x4B, bit=5, name="GI: Laundry", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Washer", location = {"GI"}, using={} , require={{"Bill Drill","Washer","Claw Clamber Boots"}}},
@@ -171,51 +171,54 @@ locations ={
 };
 
 transformations ={
-    {byte=0x15, bit=6, name="Stonie", used = 0, type="Wumba"},
-    {byte=0x15, bit=7, name="Detonator", used = 0, type="Wumba"},
-    {byte=0x16, bit=0, name="Van", used = 0, type="Wumba"},
-    {byte=0x16, bit=1, name="Sub", used = 0, type="Wumba"},
-    {byte=0x16, bit=2, name="Trex", used = 0, type="Wumba"},
-    {byte=0x16, bit=3, name="Washer", used = 0, type="Wumba"},
-    {byte=0x16, bit=4,name="Snowball", used = 0, type="Wumba"},
-    {byte=0x16, bit=5,name="Bee", used = 0, type="Wumba"},
-    {byte=0x16, bit=6,name="Dragon", used = 0, type="Wumba"}
+    {byte=0x15, bit=6,  model=0x61D, name="Stonie", used = 0, type="Wumba"},
+    {byte=0x15, bit=7, model=0x623, name="Detonator", used = 0, type="Wumba"},
+    {byte=0x16, bit=0, model=0x624, name="Van", used = 0, type="Wumba"},
+    {byte=0x16, bit=1, model=0x626, name="Sub", used = 0, type="Wumba"},
+    {byte=0x16, bit=2, model=0x609, name="Trex", used = 0, type="Wumba"},
+    {byte=0x16, bit=3, model=0x60C, name="Washer", used = 0, type="Wumba"},
+    {byte=0x16, bit=4, model=0x60B, name="Snowball", used = 0, type="Wumba"},
+    {byte=0x16, bit=5, model=0x613, name="Bee", used = 0, type="Wumba"},
+    {byte=0x16, bit=6, model=0x62E, name="Dragon", used = 0, type="Wumba"}
 };
 mumbos = {
-    {byte=0x6A, bit=7, name="Mumbo MT", type="Mumbo", used = 0},
-    {byte=0x6B, bit=0, name="Mumbo GGM", type="Mumbo", used = 0},
-    {byte=0x6B, bit=1, name="Mumbo WW", type="Mumbo", used = 0},
-    {byte=0x6B, bit=2, name="Mumbo JRL", type="Mumbo", used = 0},
-    {byte=0x6B, bit=3, name="Mumbo TDL", type="Mumbo", used = 0},
-    {byte=0x6B, bit=4, name="Mumbo HFP", type="Mumbo", used = 0},
-    {byte=0x6B, bit=5, name="Mumbo CCL", type="Mumbo", used = 0},
-    {byte=0x6B, bit=6, name="Mumbo IoH", type="Mumbo", used = 0},
-    {byte=0x6B, bit=7, name="Mumbo GI", type="Mumbo", used = 0}
+    {byte=0x6A, bit=7, model=0x7E0, name="Mumbo MT", type="Mumbo", used = 0},
+    {byte=0x6B, bit=0, model=0x7D8, name="Mumbo GGM", type="Mumbo", used = 0},
+    {byte=0x6B, bit=1, model=0x7D9, name="Mumbo WW", type="Mumbo", used = 0},
+    {byte=0x6B, bit=2, model=0x7DB, name="Mumbo JRL", type="Mumbo", used = 0},
+    {byte=0x6B, bit=3, model=0x7DC, name="Mumbo TDL", type="Mumbo", used = 0},
+    {byte=0x6B, bit=4, model=0x7DA, name="Mumbo HFP", type="Mumbo", used = 0},
+    {byte=0x6B, bit=5, model=0x7DD, name="Mumbo CCL", type="Mumbo", used = 0},
+    {byte=0x6B, bit=6, model=0x7DF, name="Mumbo IoH", type="Mumbo", used = 0},
+    {byte=0x6B, bit=7, model=0x7DE, name="Mumbo GI", type="Mumbo", used = 0}
 };
 
-abilities ={{byte=0x1B, bit=1, name="Grip Grab", type="Ability", used = 0},
-{byte=0x1B, bit=2, name="Breegull Blaster", type="Ability", used = 0},
-{byte=0x1B, bit=3, name="Egg Aim", type="Ability", used = 0},
-{byte=0x1B, bit=6, name="Bill Drill", type="Ability", used = 0},
-{byte=0x1B, bit=7, name="Beak Bayonet", type="Ability", used = 0},
-{byte=0x1C, bit=0, name="Airborne Egg Aiming", type="Ability", used = 0}, 
-{byte=0x1C, bit=1, name="Split Up", type="Ability", used = 0}, 
-{byte=0x1C, bit=2, name="Wing Whack", type="Ability", used = 0},
-{byte=0x1C, bit=3, name="Talon Torpedo", type="Ability", used = 0}, 
-{byte=0x1C, bit=4, name="Sub-Aqua Egg Aiming", type="Ability", used = 0}, 
-{byte=0x1C, bit=6, name="Shack Pack", type="Ability", used = 0},
-{byte=0x1C, bit=7, name="Glide", type="Ability", used = 0},
-{byte=0x1D, bit=0, name="Snooze Pack", type="Ability", used = 0},
-{byte=0x1D, bit=1, name="Leg Spring", type="Ability", used = 0},
-{byte=0x1D, bit=2, name="Claw Clamber Boots", type="Ability", used = 0},
-{byte=0x1D, bit=3, name="Springy Step Shoes", type="Ability", used = 0},
-{byte=0x1D, bit=4, name="Taxi Pack", type="Ability", used = 0},
-{byte=0x1D, bit=5, name="Hatch", type="Ability", used = 0},
-{byte=0x1D, bit=6, name="Pack Whack", type="Ability", used = 0},
-{byte=0x1D, bit=7, name="Sack Pack", type="Ability", used = 0},
-{byte=0x1E, bit=1, name="Fire Eggs", type="Ability", used = 0},
-{byte=0x1E, bit=2, name="Grenade Eggs", type="Ability", used = 0},
-{byte=0x1E, bit=4, name="Ice Eggs", type="Ability", used = 0}};
+
+
+abilities ={
+{byte=0x1B, bit=1, name="Grip Grab", type="Ability", model=0x7D6, level=0x086A20, index=0, used = 0},
+{byte=0x1B, bit=2, name="Breegull Blaster", type="Ability", model=0x7D6, level=0x086A20, index=1, used = 0},
+{byte=0x1B, bit=3, name="Egg Aim", type="Ability", model=0x7D6, level=0x086A20, index=2, used = 0},
+{byte=0x1B, bit=6, name="Bill Drill", type="Ability", model=0x7D6, used = 0},
+{byte=0x1B, bit=7, name="Beak Bayonet", type="Ability", model=0x7D6, used = 0},
+{byte=0x1C, bit=0, name="Airborne Egg Aiming", type="Ability", model=0x7D6, used = 0}, 
+{byte=0x1C, bit=1, name="Split Up", type="Ability", model=0x7D6, used = 0}, 
+{byte=0x1C, bit=2, name="Wing Whack", type="Ability", model=0x7D6, used = 0},
+{byte=0x1C, bit=3, name="Talon Torpedo", type="Ability", model=0x7D6, used = 0}, 
+{byte=0x1C, bit=4, name="Sub-Aqua Egg Aiming", type="Ability", model=0x7D6, used = 0}, 
+{byte=0x1C, bit=6, name="Shack Pack", type="Ability", model=0x7D6, used = 0},
+{byte=0x1C, bit=7, name="Glide", type="Ability", model=0x7D6, used = 0},
+{byte=0x1D, bit=0, name="Snooze Pack", type="Ability", model=0x7D6, used = 0},
+{byte=0x1D, bit=1, name="Leg Spring", type="Ability", model=0x7D6, used = 0},
+{byte=0x1D, bit=2, name="Claw Clamber Boots", type="Ability", model=0x832, used = 0},
+{byte=0x1D, bit=3, name="Springy Step Shoes", type="Ability", model=0x7AA, used = 0},
+{byte=0x1D, bit=4, name="Taxi Pack", type="Ability", model=0x7D6, used = 0},
+{byte=0x1D, bit=5, name="Hatch", type="Ability", model=0x7D6, used = 0},
+{byte=0x1D, bit=6, name="Pack Whack", type="Ability", model=0x7D6, used = 0},
+{byte=0x1D, bit=7, name="Sack Pack", type="Ability", model=0x7D6, used = 0},
+{byte=0x1E, bit=1, name="Fire Eggs", type="Ability", model=0x7D6, used = 0},
+{byte=0x1E, bit=2, name="Grenade Eggs", type="Ability", model=0x7D6, used = 0},
+{byte=0x1E, bit=4, name="Ice Eggs", type="Ability", model=0x7D6, used = 0}};
 
 cheatos = {
     {byte=0x56, bit=3, name="Cheato Page: MT: Snake Heads", type="Cheato Page", level ="MT Main Area", item={name ="nothing"}, hint ="", sphere =-1, location = {"MT"}, using={},require={{"MT Mumbo"},{"Bill Drill"}}},
@@ -490,7 +493,7 @@ function buildHints2()
 end
 
 
---{byte=0x1E, bit=3, name="Clockwork Kazooie Eggs", type="Ability", used = 0},
+--{byte=0x1E, bit=3, name="Clockwork Kazooie Eggs", type="Ability", model=0x7D6, used = 0},
 
 
 bosses = {"MT: Targitzan","GGM: Old King Coal","WW: Mr. Patch","JRL: Lord Woo Fak Fak","TDL: Terry Defeated","GI: Weldar","HFP: Dragon Brothers Defeated","CCL: Mingy Jongo"};
@@ -1112,7 +1115,7 @@ function checkSet()
             currentValue = flagBlock[v.byte];
             previousValue = flag_block_cache[v.byte];
             currentBit = v.bit;
-            if currentValue ~= previousValue then
+            if currentValue ~= previousValue   then
                 if v.type == "Reward" then
                     local val = 0;
                     if bit.check(currentValue, 2) then
@@ -1131,6 +1134,7 @@ function checkSet()
                                 setFlag(b.item.byte, b.item.bit);
                                 print("You obtained "..b.item.name);
                                 queueMessage("You obtained "..b.item.name,300,60,175);
+                                queueTEXT("You obtained "..b.item.name)
                             end   
 
                         end
@@ -1149,6 +1153,7 @@ function checkSet()
                                 setFlag(v.item.byte, v.item.bit);
                                 print("You obtained "..v.item.name);
                                 queueMessage("You obtained "..v.item.name,300,60,175);
+                                queueTEXT("You obtained "..v.item.name)
                             end
                         flag_block_cache = flagBlock;
                     end
@@ -1308,7 +1313,14 @@ models = {
     [0x612] = "Empty Honeycomb",    
     [0x7D7] = "Silo", -- Jamjars
     [0xFFFF] = "Player Model",
-    [0x7A2] = "Signpost"
+    [0x7F3] = "Cheato Page",
+    [0x7A2] = "Signpost",
+    [0x618] = "Red Feather",
+    [0x6EF] = "Nest (Feathers)",
+    [0x6EA] = "Nest (Eggs)",
+    [0x6EC] = "Nest (Note)",
+    [0x6ED] = "Nest (Treble Clef)"
+
 }
 
 function firstTimeTexts()
@@ -1339,6 +1351,26 @@ function firstTimeTexts()
     setFlag(0x02,2);-- name="Signpost FTT", nomap=true, type="FTT"},
     setFlag(0x07,7);-- name="First Time Cheato Page", type="FTT"},
     setFlag(0x0C,7);--name="Humba Wumba FTT", type="FTT"},
+end
+
+function setGlobalFlag(byte, globalBit)
+	if type(byte) == "number" and type(globalBit) == "number" and globalBit >= 0 and globalBit < 8 then
+		local flags = 0x12C780;
+		if isRDRAM(flags) then
+			local currentValue = mainmemory.readbyte(flags + byte);
+			mainmemory.writebyte(flags + byte, bit.set(currentValue, globalBit));
+		end
+	end
+end
+
+function clearGlobalFlag(byte, globalBit)
+	if type(byte) == "number" and type(globalBit) == "number" and globalBit >= 0 and globalBit < 8 then
+		local flags = 0x12C780;
+		if isRDRAM(flags) then
+			local currentValue = mainmemory.readbyte(flags + byte);
+			mainmemory.writebyte(flags + byte, bit.clear(currentValue, globalBit));
+		end
+	end
 end
 
 function getNumSlots()
@@ -1409,6 +1441,8 @@ function getYPosition()
 	return 0;
 end
 
+
+
 function getZPosition()
 	local positionObject = getPlayerSubObject(position_pointer_index);
 	if isRDRAM(positionObject) then
@@ -1437,8 +1471,18 @@ signPositions = {};
 siloPositions = {};
 destroyFrames =0;
 
+function setObjectAnimationValue(model1Base,model)
+    local objectIDPointer = dereferencePointer(model1Base + 0x00);
+	if isRDRAM(objectIDPointer) then
+		local modelIndex = mainmemory.write_u16_be(objectIDPointer + 0x14,model);
+	end
+end
+
+
+jiggyFlags = {};
+spawnTrigger = {stored=false,x=0,y=0,z=0};
 function searchAndDestroy()
-    if destroyFrames >= 500 and isPhysicsFrame() then
+    if isPhysicsFrame() and destroyFrames >= 50 then
         objectArray = dereferencePointer(object_array_pointer);
         numSlots = getNumSlots();
         
@@ -1481,18 +1525,122 @@ function searchAndDestroy()
                 end
                 if found == false then
                     -- hash coords
-                    local hint = hints[((math.floor((math.min(math.abs(xpos),math.abs(zpos))/math.max(math.abs(xpos),math.abs(zpos)))* table.getn(hints))+1)*31)%table.getn(hints) + 1];
+                    local hint = mainmemory.read_u16_be(v+0x2A);--hints[((math.floor((math.min(math.abs(xpos),math.abs(zpos))/math.max(math.abs(xpos),math.abs(zpos)))* table.getn(hints))+1)*31)%table.getn(hints) + 1];
+                    print("added "..hint)
                     table.insert(signPositions,{xpos,zpos,hint})
                 end
+                --setObjectAnimationValue(v,0x61F);
+                --mainmemory.write_u16_be(v+0x8C,0x13);
+                
 
             end
+
+            --0x7D6 -- 0x665 --0x854?
+            if "Jiggy" == name or "Empty Honeycomb" == name or "Cheato Page" == name then
+
+                --check for flag set  --0x44 bits past 0x45 - 1  -- devide num by 8 to get byte then the remainder is the bit; 
+                local add = 0;
+                local bitNum = 0;
+                if "Jiggy" == name then
+                    add = mainmemory.readfloat(v+0x50,true) - 1;
+                    bitNum = add%8;
+                    add = math.floor(add/8) + 0x45;
+                end
+                if "Empty Honeycomb" == name then
+                    add = mainmemory.readfloat(v+0x50,true) - 1 + 2;
+                    bitNum = add%8;
+                    add = math.floor(add/8) + 0x3F;
+                end
+                if "Cheato Page" == name then
+                    add = mainmemory.readfloat(v+0x50,true) - 1 + 3;
+                    bitNum = add%8;
+                    add = math.floor(add/8) + 0x56;
+                end
+                --loop jiggies table
+                for o,p in ipairs(jiggies)  do
+                    if p.byte == add and p.bit ==  bitNum then
+                        if p.item.name ~= "nothing" then
+                                setObjectAnimationValue(v,p.item.model); --p.item.model
+                                mainmemory.writefloat(v+0x38,0.5,true) -- scale it
+                                --rotate it?
+                                -- spawnTrigger.x = mainmemory.readfloat(v + 0x04,  true);
+                                -- spawnTrigger.y = mainmemory.readfloat(v + 0x08,  true);
+                                -- spawnTrigger.z = mainmemory.readfloat(v + 0x0c,  true);
+                                -- spawnTrigger.stored =true;
+
+                                if p.item.type == "Mumbo" then
+                                    print("rotate");
+                                    mainmemory.writefloat(v+0x44,270,true);
+                                end
+                                
+                                
+                        end
+                    end
+                end
+                --print(mainmemory.read_u32_be(dereferencePointer(v+0x10)));
+
+               -- setObjectAnimationValue(v,0x7D6); --2148030624  --0858A0
+                
+                --print(dereferencePointer(mainmemory.read_u32_be(dereferencePointer(v+0x10)))); 24076 hc id
+            end
+
+            -- if "Nest (Treble Clef)" == name and  spawnTrigger.stored then
+            --     --setObjectAnimationValue(v,0x0);
+            --     mainmemory.write_u32_be(dereferencePointer(v+0x10),0x80086A20);
+            --     mainmemory.writefloat(v+0x54,0,true);
+            --     mainmemory.writefloat(v + 0x04, spawnTrigger.x, true); --x
+            --     mainmemory.writefloat(v + 0x0C, spawnTrigger.z, true); --z
+            --     mainmemory.writefloat(v + 0x08, spawnTrigger.y, true); --y
+            --     spawnTrigger.stored =false;
+            --     print("changed");
+            -- end
+            -- if movePrev > 100  and PrevCount then
+            --     mainmemory.writefloat(getPlayerSubObject(position_pointer_index) +0x04,prevPos.x, true);
+            --     mainmemory.writefloat(getPlayerSubObject(position_pointer_index) +0x08,prevPos.y, true);
+            --     mainmemory.writefloat(getPlayerSubObject(position_pointer_index) +0x0C,prevPos.z, true);
+            --     movePrev = 0;
+            --     PrevCount = false;
+            --     print("moving back");
+            -- end
+            -- if PrevCount then
+            --     movePrev = movePrev + 1;
+            -- end
+
+            
+            -- if "Nest (Feathers)" == name and moveFeathers then
+            --     prevPos.x = getXPosition();
+            --     prevPos.y = getYPosition();
+            --     prevPos.z = getZPosition();
+            --     mainmemory.writefloat(getPlayerSubObject(position_pointer_index) +0x04,mainmemory.readfloat(v + 0x04,true), true);
+            --     mainmemory.writefloat(getPlayerSubObject(position_pointer_index) +0x08,mainmemory.readfloat(v + 0x08,true), true);
+            --     mainmemory.writefloat(getPlayerSubObject(position_pointer_index) +0x0C,mainmemory.readfloat(v + 0x0C,true), true);
+            --     print("moving to feathers "..mainmemory.readfloat(v + 0x04,true).." "..mainmemory.readfloat(v + 0x0C,true));
+            --     --setObjectAnimationValue(v,0x7D6);         
+            --     moveFeathers = false;
+            --     PrevCount = true;
+            -- end
+
+
+                
+                
+                
+                    -- for i = 0, 90 ,1 do
+                    --     if (jiggyFlags[i+1]) then
+                    --         setFlag(0x45 + (math.floor(i/8)) , i%8);
+                    --     else
+                    --         clearFlag(0x45 + (math.floor(i/8)) , i%8);
+                    --     end
+                    -- end
+
 
         end
         destroyFrames = 0;
     end
     destroyFrames = destroyFrames + 1;
 end
-
+prevPos = {x=0,y=0,z=0};
+movePrev = 0;
+PrevCount = false;
 signCoolDown = 0;
 
 function signPostTalk(bol)
@@ -1516,13 +1664,104 @@ function signPostTalk(bol)
     end
 end
 
+function signPostHints(bol)
+    local text_address = dereferencePointer(0x127600);
+    if text_address and bol then
+        --edit the message 
+        local text = "";
+        local xpos = getXPosition();
+        local zpos = getZPosition();
+    
+        local distance =1000;
+        for i,v in ipairs(signPositions)  do
+            if math.sqrt( (v[1] - xpos) * (v[1] - xpos) +(v[2] - zpos) * (v[2] - zpos))< 200 then
+                text = string.upper(hints[v[3]%(table.getn(hints) - 1) + 1]);               
+            end
+        end
+        
+        local i = 0;
+        for i = 1, #text do
+            local c = text:sub(i,i)
+            mainmemory.write_u8(text_address + 0x9 + i  ,string.byte(c));
+        end
+        mainmemory.write_u8(text_address + 0x9 + #text+1,0);
+        mainmemory.write_u8(text_address + 0x9 + #text +2,0);
+    end
+    previousPointer = 0;
+end
+
+
+
+function MenuChange(bol)
+    local text_address = dereferencePointer(0x12B8DC);
+    if text_address and bol and text_address~=previousPointer then
+        --edit the message 
+        local text = "CUSTOM TEXT WOAH TYPE 1";
+        local xpos = getXPosition();
+        local zpos = getZPosition();
+    
+        
+        local i = 0;
+        for i = 1, #text do
+            local c = text:sub(i,i)
+            mainmemory.write_u8(text_address  +0x34+ i  ,string.byte(c));
+        end
+        mainmemory.write_u8(text_address  +0x34+ #text+1,0);
+        mainmemory.write_u8(text_address  +0x34+ #text+2,0);
+    end
+    previousPointer = text_address;
+end
+
 messageQueue = {};
 messageLength = 0;
 currentMessage = "";
+moveFeathers = false;
 cx = 0;
 cy = 0;
 function queueMessage(mess,time,x,y)
     table.insert(messageQueue,{mess,time,x,y});
+end
+function queueTEXT(mess)
+    --table.insert(messageQueue,mess);
+end
+
+messageActive = false;
+
+function featherQueue()
+    local text_address = dereferencePointer(0x127600);
+    if text_address == nil then
+        text_address = 0;
+    end
+    --print(table.getn(messageQueue).." "..text_address);
+    if table.getn(messageQueue) > 0 and text_address == 0 then
+        currentMessage = table.remove(messageQueue,1); -- poll queue
+        clearFlag(0x00,4); -- clear first feathers
+        moveFeathers = true;
+        messageActive = false;
+        --print("cleared flag");
+        --teleport feaethers to banjo. wait till feathers is there to progress
+    elseif  text_address > 0 and messageActive == false then
+        --write message in text
+        local text = currentMessage;
+        text = string.upper(text);
+
+        local i = 0;
+        for i = 1, #text do
+            local c = text:sub(i,i)
+            mainmemory.write_u8(text_address + 0x5 + i  ,string.byte(c));
+        end
+        mainmemory.write_u8(text_address + 0x5 + #text+1,0);
+        mainmemory.write_u8(text_address + 0x5 + #text+2,0);
+
+        --print("writing "..text);
+        messageActive = true;
+    elseif  messageActive and text_address == 0 then
+
+            messageActive = false;
+
+    end
+
+    
 end
 
 --queueMessage("tester",300,60,175);
@@ -1642,6 +1881,7 @@ function printALL(t)
     end
 end
 
+failedLogic = false;
 
 local function startRando()
     SEED = tonumber(forms.gettext(box),10);
@@ -1706,6 +1946,8 @@ local function startRando()
 
     if val == -1 then
         print("seed failed");
+        failedLogic = true;
+        return false;
     end
 
     local flags = dereferencePointer(flag_block_pointer);
@@ -1794,7 +2036,15 @@ jinjoRandom = forms.checkbox(handle, "Jinjos", 5, 125);
 
 
 button = forms.button(handle, "Generate Seed",startRando,100,200);
+
+displayTextStage= 0;
+
+
+
 while true do
+    if failedLogic then
+        return false;
+    end
     if randoRunning then
         checkSet();
         if checkFlag(0x5E,0) and flagsSet == false then
@@ -1809,6 +2059,7 @@ while true do
             setFlag(0x60,6);
             setFlag(0x60,7);
             flagsSet = true;
+            
         end
         setRNGOutcome("Jinjo Colours", patternNum);
         
@@ -1825,12 +2076,13 @@ while true do
         if inputs["P1 DPad D"] then
             moveMessage();
         end
-        signPostTalk(inputs["P1 B"]);
+        signPostHints(inputs["P1 B"]);
+      
 
     end
 
     messageBox();
-
+    --featherQueue();
 
 
     emu.yield();
