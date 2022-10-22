@@ -56,7 +56,7 @@ jiggies = {
 {byte=0x49, bit=7, name="JRL: UFO", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "JRL Town", location = {"JRL"}, using={} , require={{"Talon Torpedo","Ice Eggs"}}},
 {byte=0x4A, bit=0, name="TDL: Under Terry's Nest", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "TDL Top", location = {"TDL"}, using={} , require={{"Springy Step Shoes","Grenade Eggs"},{"Springy Step Shoes","Bill Drill"}}},
 {byte=0x4A, bit=1, name="TDL: Dippy", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "TDL From CCL", location = {"CCL"}, using={} , require={{"Talon Torpedo"}}},
-{byte=0x4A, bit=2, name="TDL: Scrotty", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "TDL Main Area", location = {"TDL","WW",}, using={} , require={{"Split Up","Taxi Pack","Mumbo TDL","Mumbo IoH","Bill Drill"}}},
+{byte=0x4A, bit=2, name="TDL: Scrotty", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "TDL Main Area", location = {"TDL","WW",}, using={} , require={{"Split Up","Taxi Pack","Mumbo TDL","Mumbo IoH","Mumbo GGM","Bill Drill","Grenade Eggs","Grip Grab"}}},
 {byte=0x4A, bit=3, name="TDL: Terry Defeated", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "TDL Top", location = {"TDL"}, using={} , require={{"Springy Step Shoes","Egg Aim"}}},
 {byte=0x4A, bit=4, name="TDL: Oogle Boogle Tribe", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "TDL Caves", location = {"TDL"}, using={} , require={{"Grip Grab","Bill Drill","Trex","Mumbo TDL","Fire Eggs"},{"Grip Grab","Bill Drill","Trex","Mumbo TDL","Dragon"}}},
 {byte=0x4A, bit=5, name="TDL: Chompa's Belly", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "TDL Caves", location = {"TDL"}, using={} , require={{"Breegull Blaster"}}},
@@ -64,36 +64,36 @@ jiggies = {
 {byte=0x4A, bit=7, name="TDL: Stomping Plains", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "TDL Top", location = {"TDL"}, using={} , require={{"Springy Step Shoes"}}},
 {byte=0x4B, bit=0, name="TDL: Rocknut Tribe", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "TDL Main Area", location = {"TDL"}, using={} , require={{"Egg Aim","Clockwork Kazooie Eggs"}}},
 {byte=0x4B, bit=1, name="TDL: Code of the Dinosaurs", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "TDL Main Area", location = {"TDL"}, using={} , require={{"Trex"}}},
-{byte=0x4B, bit=2, name="GI: Waste Disposal Underwater", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Toxic Waste", location = {"GI"}, using={} , require={{"Bill Drill","Washer","Claw Clamber Boots","Taxi Pack","Pack Whack","Mumbo GI","Fire Eggs","Shack Pack"},{"Bill Drill","Washer","Claw Clamber Boots","Taxi Pack","Pack Whack","Mumbo GI","Grenade Eggs","Shack Pack"}}},
-{byte=0x4B, bit=3, name="GI: Weldar", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Washer", location = {"GI"}, using={} , require={{"Bill Drill","Washer","Claw Clamber Boots","Taxi Pack","Pack Whack","Mumbo GI","Fire Eggs"},{"Bill Drill","Washer","Claw Clamber Boots","Taxi Pack","Pack Whack","Mumbo GI","Grenade Eggs"}}},
+{byte=0x4B, bit=2, name="GI: Waste Disposal Underwater", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Toxic Waste", location = {"GI"}, using={} , require={{"Bill Drill","Washer","Claw Clamber Boots","Taxi Pack","Pack Whack","Mumbo GI","Fire Eggs","Shack Pack","Split Up"},{"Bill Drill","Washer","Claw Clamber Boots","Taxi Pack","Pack Whack","Mumbo GI","Grenade Eggs","Shack Pack","Split Up"}}},
+{byte=0x4B, bit=3, name="GI: Weldar", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Washer", location = {"GI"}, using={} , require={{"Bill Drill","Washer","Claw Clamber Boots","Taxi Pack","Pack Whack","Mumbo GI","Fire Eggs","Split Up"},{"Bill Drill","Washer","Claw Clamber Boots","Taxi Pack","Pack Whack","Mumbo GI","Grenade Eggs","Split Up"}}},
 {byte=0x4B, bit=4, name="GI: Clinker's Cavern", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Top Floors", location = {"GI"}, using={} , require={{"Breegull Blaster","Claw Clamber Boots","Mumbo GI"}}},
 {byte=0x4B, bit=5, name="GI: Laundry", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Washer", location = {"GI"}, using={} , require={{"Bill Drill","Washer","Claw Clamber Boots"}}},
 {byte=0x4B, bit=6, name="GI: Floor 5", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Top Floors", location = {"GI"}, using={} , require={{"Claw Clamber Boots"}}},
 {byte=0x4B, bit=7, name="GI: Quality Control", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Top Floors", location = {"GI"}, using={} , require={{"Claw Clamber Boots","Grenade Eggs"}}},
 {byte=0x4C, bit=0, name="GI: Floor 1 Guarded", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Floor 1", location = {"GI"}, using={} , require={{"Egg Aim","Claw Clamber Boots"}}},
 {byte=0x4C, bit=1, name="GI: Trash Compactor", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Floor 1", location = {"GI"}, using={} , require={{"Split Up","Pack Whack"}}},
-{byte=0x4C, bit=2, name="GI: Packing Room", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Top Floors", location = {"GI"}, using={} , require={{"Claw Clamber Boots","Taxi Pack","Pack Whack"}}},
-{byte=0x4C, bit=3, name="GI: Waste Disposal Box", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Toxic Waste", location = {"GI"}, using={} , require={{"Taxi Pack","Pack Whack"}}},
+{byte=0x4C, bit=2, name="GI: Packing Room", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Top Floors", location = {"GI"}, using={} , require={{"Claw Clamber Boots","Taxi Pack","Pack Whack","Split Up"}}},
+{byte=0x4C, bit=3, name="GI: Waste Disposal Box", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "GI Toxic Waste", location = {"GI"}, using={} , require={{"Taxi Pack","Pack Whack","Split Up"}}},
 {byte=0x4C, bit=4, name="HFP: Dragon Brothers Defeated", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Top", location = {"HFP"}, using={} , require={{"Fire Eggs","Ice Eggs","Claw Clamber Boots"}}},
 {byte=0x4C, bit=5, name="HFP: Inside the Volcano", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Fire", location = {"HFP"}, using={} , require={{}}},
-{byte=0x4C, bit=6, name="HFP: Sabreman", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Fire", location = {"HFP"}, using={} , require={{"Taxi Pack","Fire Eggs","Mumbo HFP"}}},
-{byte=0x4C, bit=7, name="HFP: Boggy", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Ice", location = {"HFP"}, using={} , require={{"Shack Pack"}}},
+{byte=0x4C, bit=6, name="HFP: Sabreman", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Fire", location = {"HFP"}, using={} , require={{"Taxi Pack","Fire Eggs","Mumbo HFP","Split Up"}}},
+{byte=0x4C, bit=7, name="HFP: Boggy", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Ice", location = {"HFP"}, using={} , require={{"Shack Pack","Split Up"}}},
 {byte=0x4D, bit=0, name="HFP: Icy Side Train Station", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Ice", location = {"HFP"}, using={} , require={{"Snowball","Grenade Eggs","GGM Mumbo"}}},
-{byte=0x4D, bit=1, name="HFP: Oil Drill", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Ice", location = {"HFP"}, using={} , require={{"Shack Pack","Snowball"}}},
+{byte=0x4D, bit=1, name="HFP: Oil Drill", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Ice", location = {"HFP"}, using={} , require={{"Shack Pack","Snowball","Split Up"}}},
 {byte=0x4D, bit=2, name="HFP: Stomping Plains Connection", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Ice", location = {"TDL"}, using={} , require={{"Split Up","Snooze Pack"}}},
 {byte=0x4D, bit=3, name="HFP: Kickball", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Fire", location = {"HFP"}, using={} , require={{"Stonie","MT Mumbo"}}},
-{byte=0x4D, bit=4, name="HFP: Alien", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Ice", location = {"HFP","JRL"}, using={} , require={{"Bill Drill","Hatch","Mumbo HFP","Talon Torpedo","Ice Eggs"}}},
+{byte=0x4D, bit=4, name="HFP: Alien", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Ice", location = {"HFP","JRL"}, using={} , require={{"Bill Drill","Hatch","Mumbo HFP","Talon Torpedo","Ice Eggs","Split Up"}}},
 {byte=0x4D, bit=5, name="HFP: Lava Waterfall", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "HFP Fire", location = {"HFP"}, using={} , require={{"Split Up","Grip Grab"}}},
 {byte=0x4D, bit=6, name="CCL: Mingy Jongo", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "CCL Outside", location = {"CCL"}, using={} , require={{}}},
-{byte=0x4D, bit=7, name="CCL: Mr. Fit", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "CCL Outside", location = {"CCL"}, using={} , require={{"Bill Drill","Springy Step Shoes","Hatch","Sack Pack","Mumbo CCL"}}},
+{byte=0x4D, bit=7, name="CCL: Mr. Fit", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "CCL Outside", location = {"CCL"}, using={} , require={{"Bill Drill","Springy Step Shoes","Hatch","Sack Pack","Mumbo CCL","Split Up"}}},
 {byte=0x4E, bit=0, name="CCL: Pot o' Gold", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "CCL Outside", location = {"CCL"}, using={} , require={{"Egg Aim","Fire Eggs","Grenade Eggs","Ice Eggs"}}},
 {byte=0x4E, bit=1, name="CCL: Canary Mary", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "CCL Outside", location = {"CCL"}, using={} , require={{"Detonator"}}},
 {byte=0x4E, bit=2, name="CCL: Zubba's Nest", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "CCL Bee", location = {"CCL"}, using={} , require={{"Bee"}}},
 {byte=0x4E, bit=3, name="CCL: Eyeballus Jiggium Plant", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "CCL Bee", location = {"CCL"}, using={} , require={{"Bee"}}},
-{byte=0x4E, bit=4, name="CCL: Cheese Wedge", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "CCL Outside", location = {"CCL"}, using={} , require={{"Hatch","Pack Whack","Sack Pack","Mumbo CCL"}}},
+{byte=0x4E, bit=4, name="CCL: Cheese Wedge", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "CCL Outside", location = {"CCL"}, using={} , require={{"Hatch","Pack Whack","Sack Pack","Mumbo CCL","Split Up"}}},
 {byte=0x4E, bit=5, name="CCL: Trash Can", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "CCL Outside", location = {"CCL"}, using={} , require={{"Split Up","Egg Aim"},{"Split Up","Wing Whack"}}},
 {byte=0x4E, bit=6, name="CCL: Superstash", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "CCL Inside", location = {"CCL"}, using={} , require={{"Clockwork Kazooie Eggs"}}},
-{byte=0x4E, bit=7, name="CCL: Jelly Castle", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "CCL Outside", location = {"CCL"}, using={} , require={{"Shack Pack"}}},
+{byte=0x4E, bit=7, name="CCL: Jelly Castle", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "CCL Outside", location = {"CCL"}, using={} , require={{"Shack Pack","Split Up"}}},
 {byte=0x50, bit=1, name="IoH: King Jingaling Intro", type="Jiggy", sphere=-1, item={name ="nothing"}, level = "Starting Item", location = {}, using={} , require={{}}}
 
 };
@@ -162,11 +162,11 @@ locations ={
     {name="MT", requires={}},
     {name="GGM", requires={}},
     {name="WW", requires={}},
-    {name="JRL", requires={"Split Up"}},
-    {name="TDL", requires={"Talon Torpedo"}},
-    {name="GI", requires={"Talon Torpedo","Springy Step Shoes","Mumbo GGM"}},
-    {name="HFP", requires={"Split Up"}},
-    {name="CCL", requires={"Talon Torpedo"}}
+    {name="JRL", requires={}},
+    {name="TDL", requires={}},
+    {name="GI", requires={"Springy Step Shoes","Mumbo GGM"}},
+    {name="HFP", requires={}},
+    {name="CCL", requires={}}
 
 };
 
@@ -275,9 +275,9 @@ honeycombs = {
 	{byte=0x42, bit=2, name="Honeycomb: IoH: Plateau", type="Honeycomb", level ="IOH Plateau", item={name ="nothing"}, sphere =-1, location = {"GGM"}, using={},require={{}}}
 };
 rewards = {
-    {byte=0x08, bit=4, name="(Cheato Page Reward 1)", gave =0, type="Cheato",sphere =-1,amt=5,item={name ="nothing"}, using={},require={{}}},
-    {byte=0x08, bit=5, name="(Cheato Page Reward 2)", gave =0, type="Cheato",sphere =-1,amt=10,item={name ="nothing"}, using={},require={{}}},
-    {byte=0x08, bit=6, name="(Cheato Page Reward 3)", gave =0, type="Cheato",sphere =-1,amt=15,item={name ="nothing"}, using={},require={{}}},
+    {byte=0x08, bit=4, name="(Cheato Page Reward 1)", gave =0, type="CheatoR",sphere =-1,amt=5,item={name ="nothing"}, using={},require={{}}},
+    {byte=0x08, bit=5, name="(Cheato Page Reward 2)", gave =0, type="CheatoR",sphere =-1,amt=10,item={name ="nothing"}, using={},require={{}}},
+    {byte=0x08, bit=6, name="(Cheato Page Reward 3)", gave =0, type="CheatoR",sphere =-1,amt=15,item={name ="nothing"}, using={},require={{}}},
 
     {byte=0x98, bit=1, name="(Honeycomb Reward 1)",gave =0, type="Reward",sphere =-1,amt=1,item={name ="nothing"}, using={},require={{}}},
     {byte=0x98, bit=2, name="(Honeycomb Reward 2)",gave =0, type="Reward",sphere =-1,amt=4,item={name ="nothing"}, using={},require={{}}},
@@ -526,6 +526,36 @@ function giveClockworks()
         queueMessage("You obtained Clockwork Kazooie Eggs",300,60,175);
         print("You obtained Clockwork Kazooie Eggs");
     end
+end
+
+openedHag1 = false;
+
+function openHag1()
+    local flags = dereferencePointer(flag_block_pointer);
+    local counter = 0;
+    for i,v in ipairs(jiggies)  do
+        for j,b in ipairs(bosses )  do
+            if v.name == b then
+                if bit.check(v.byte , v.bit) then
+                    counter = counter +1;
+                end
+            end
+        end
+    end
+    if counter >= table.getn(bosses)  and openedHag1 == false then
+        setFlag(0x6E, 3);
+        openedHag1 = true;
+    end
+
+end
+
+clocksinLogic = false;
+function addClockworksToGen()
+    local clocks = {byte=0x1E, bit=3, name="Clockwork Kazooie Eggs", type="Ability", model=0x7D6, used = 0};
+
+    table.insert(abilities,clocks);
+    table.insert(movesNeeded,clocks.name);
+    clocksinLogic = true;
 
 end
 
@@ -661,11 +691,11 @@ function pickMove(i)
     end
 
     -- if index is 4 and there is no split up, add it now!
-    if i == 10 and has_value (currentMoves, "Split Up") == false then
+    if i == 15 and has_value (currentMoves, "Split Up") == false then
         index = 7;
     end
     -- if index is 7 and there is no Talon Torpido, add it now!
-    if i == 7 and has_value (currentMoves, "Talon Torpedo") == false then
+    if i == 20 and has_value (currentMoves, "Talon Torpedo") == false then
         index = 9;
     end
     --math.floor(1/(90-i))
@@ -683,7 +713,7 @@ function pickMove(i)
 	local added = false;
 	--GIVE 30%? chance per sphere from highest to 0 to try and and a check in
     while sphere > 0 do	
-        if math.random() < 0.5 then
+        if math.random() < 0.8 then
                 --select random from current sphere at random (20 attempts)
                 local checks = getChecksFromSphere(s);
                 poolIndex = math.floor(math.random()*table.getn(checks))+1;
@@ -719,7 +749,7 @@ function pickMove(i)
 
 
     pool[poolIndex].item = abilities[index];
-    all = all..pool[poolIndex].name.." >>> "..abilities[index].name.."\n";
+    all = all..addWhiteSpace(pool[poolIndex].name).."\t>>>\t"..abilities[index].name.."\n";
     table.insert(currentMoves,abilities[index].name);
     generate(pool[poolIndex].sphere + 1);
     return 1;
@@ -782,7 +812,7 @@ function generate(current)
 end
 
 spheres = {};
-movesNeeded={"Claw Clamber Boots","Springy Step Shoes","Breegull Blaster","Talon Torpedo","Split Up"};
+movesNeeded={"Claw Clamber Boots","Springy Step Shoes","Breegull Blaster"};
 
 function findMove()
 
@@ -824,7 +854,7 @@ function findMove()
         for i,v in ipairs(jiggies)  do
             if v.name == b then
                 v.sphere = findHighestSphere(v.using)+1;
-                table.insert(spheres[v.sphere],  ""..v.name.." > (BOSS PROGRESS)");
+                table.insert(spheres[v.sphere],  ""..addWhiteSpace(v.name).."\t>\t(BOSS PROGRESS)");
             end
         end
     end
@@ -832,22 +862,22 @@ function findMove()
     for x,b in ipairs(movesNeeded)  do
         for i,v in ipairs(pool)  do
             if v.item.name == b then
-                if v.type=="Cheato" then
+                if v.type=="CheatoR" then
                     addRewardRequirementsToSpheres(cheatos,v.amt)   
-                    table.insert(spheres[v.sphere],  ""..v.name.." > "..b);           
+                    table.insert(spheres[v.sphere],  ""..addWhiteSpace(v.name).."\t>\t"..b);           
                 elseif v.type=="Reward" then
                     addRewardRequirementsToSpheres(honeycombs,v.amt)   
-                    table.insert(spheres[v.sphere],  ""..v.name.." > "..b);           
+                    table.insert(spheres[v.sphere],  ""..addWhiteSpace(v.name).."\t>\t"..b);           
                 elseif v.type=="Family" then
                     addJinjosToSpheres(v.col);
-                    table.insert(spheres[v.sphere],  ""..v.name.." > "..b);
+                    table.insert(spheres[v.sphere],  ""..addWhiteSpace(v.name).."\t>\t"..b);
                     for j,n in ipairs(v.using)  do
                         if has_value(movesNeeded,n) == false then
                             table.insert(movesNeeded,n);
                         end
                     end
                 else
-                    table.insert(spheres[v.sphere],  ""..v.name.." > "..b);
+                    table.insert(spheres[v.sphere],  ""..addWhiteSpace(v.name).."\t>\t"..b);
                     for j,n in ipairs(v.using)  do
                         if has_value(movesNeeded,n) == false then
                             table.insert(movesNeeded,n);
@@ -861,7 +891,10 @@ function findMove()
 
     for i,v in ipairs(spheres)  do
         if table.getn(v) ==0 then
-            spheres[i] = {forms.gettext(bossSelected) .." > Clockwork Kazooie Eggs"};
+            if clocksinLogic == false then
+                spheres[i] = {addWhiteSpace(forms.gettext(bossSelected)) .."\t>\tClockwork Kazooie Eggs"};
+            end
+            spheres[i] = {addWhiteSpace(forms.gettext(bossSelected)) .."\t>\tHag 1 Entry"};
             break;
         end
     end
@@ -870,6 +903,14 @@ function findMove()
 
 
 
+end
+
+function addWhiteSpace(str)
+ 
+    while(string.len(str) < 40) do
+        str = str.." ";
+    end
+    return str;
 end
 
 
@@ -970,7 +1011,7 @@ function attemptRewardAdding(move)
 
 	table.insert(pool,reward);
     --all abilities, current moves, generate lines
-    all = all..reward.name.." >>> "..abilities[move].name.."\n";
+    all = all..addWhiteSpace(reward.name).."\t>>>\t"..abilities[move].name.."\n";
     table.insert(currentMoves,abilities[move].name);
     generate(sphere + 1);
     return true;
@@ -1048,7 +1089,7 @@ function addJinjosToSpheres(pat)
 
         for i,v in ipairs(jinjos) do
             if v.color == pat then
-                table.insert(spheres[v.sphere], colorMap[pat+1].." Jinjo: "..v.name);
+                table.insert(spheres[v.sphere+1], colorMap[pat+1].." Jinjo: "..v.name);
             end
         end
 end
@@ -1161,7 +1202,9 @@ function checkSet()
             end
         end
     end
-    giveClockworks();
+    if clocksinLogic == false then
+        giveClockworks();
+    end
 end
 
 function RESETSet()
@@ -1211,9 +1254,12 @@ function RESETSet()
         end
         flag_block_cache = flagBlock;     
     end
-    clearFlag(0x1E, 3);
     
-    giveClockworks();
+    
+    if clocksinLogic == false then
+        clearFlag(0x1E, 3);
+        giveClockworks();
+    end
 end
 
 flag_block_pointer = 0x12C770;
@@ -1351,6 +1397,8 @@ function firstTimeTexts()
     setFlag(0x02,2);-- name="Signpost FTT", nomap=true, type="FTT"},
     setFlag(0x07,7);-- name="First Time Cheato Page", type="FTT"},
     setFlag(0x0C,7);--name="Humba Wumba FTT", type="FTT"},
+    
+
 end
 
 function setGlobalFlag(byte, globalBit)
@@ -1526,7 +1574,7 @@ function searchAndDestroy()
                 if found == false then
                     -- hash coords
                     local hint = mainmemory.read_u16_be(v+0x2A);--hints[((math.floor((math.min(math.abs(xpos),math.abs(zpos))/math.max(math.abs(xpos),math.abs(zpos)))* table.getn(hints))+1)*31)%table.getn(hints) + 1];
-                    print("added "..hint)
+                    --print("added "..hint)
                     table.insert(signPositions,{xpos,zpos,hint})
                 end
                 --setObjectAnimationValue(v,0x61F);
@@ -1569,7 +1617,7 @@ function searchAndDestroy()
                                 -- spawnTrigger.stored =true;
 
                                 if p.item.type == "Mumbo" then
-                                    print("rotate");
+                                    --print("rotate");
                                     mainmemory.writefloat(v+0x44,270,true);
                                 end
                                 
@@ -1899,7 +1947,11 @@ local function startRando()
         dumpRewards();
         print("No Honey B and Cheato Rewards");
         all = all.."No Honey B and Cheato Rewards".."\n";
+    else
+        print("Adding Honey B and Cheato Rewards");
+        all = all.."Adding Honey B and Cheato Rewards".."\n";
     end
+
 
     --addCheatos to pool?
     if forms.ischecked(addCheatos)  then
@@ -1919,6 +1971,14 @@ local function startRando()
         print("Jinjos are Randomized. Pattern: "..(patternNum-32));
         all = all.."Jinjos are Randomized. Pattern: "..(patternNum-32).."\n";
     end
+
+    if forms.ischecked(addClockworks)  then
+        addClockworksToGen();
+        print("Clockworks have been added to Ability Pool");
+        all = all.."Adding Clockworks to Pool".."\n";
+    end
+
+    
 
     --set jinjo pattern
     --check if rando or set
@@ -1989,10 +2049,21 @@ local function startRando()
 
     --set important rando flags
 
-
+    setFlag(0x79,0);--byte=0x79, bit=0 0x82 > 3
+    setFlag(0x82,3);
 
     --set JWS
-    setFlag(0x04, 4);
+    --setFlag(0x04, 4);
+    setFlag(0x6D, 2);
+    setFlag(0x6D, 3);
+    setFlag(0x6D, 4);
+    setFlag(0x6D, 5);
+    setFlag(0x6D, 6);
+    setFlag(0x6D, 7);
+    setFlag(0x6E, 0);
+    setFlag(0x6E, 1);
+    setFlag(0x6E, 2);
+    setFlag(0x6E, 3);
     --set CK warps
     setFlag(0x75, 4);
     setFlag(0x75, 5);
@@ -2021,21 +2092,30 @@ patternNum =48;
 
 
 bossAmount = {"8 Bosses","7 Bosses","6 Bosses","5 Bosses","4 Bosses","3 Bosses","2 Bosses","1 Bosses","0 Bosses"};
-bossSelected = "6 Bosses";
+bossSelected = "4 Bosses";
 
-local handle = forms.newform(300, 300, "RANDO");
+local handle = forms.newform(600, 300, "RANDO");
 bossSelected  = forms.dropdown(handle, bossAmount,5,25);
 
-forms.settext(bossSelected,"6 Bosses");
+forms.settext(bossSelected,"4 Bosses");
 box = forms.textbox(handle, ""..math.floor(math.random()*10000), 100, 10,nil,5,2);
 
-noRewards = forms.checkbox(handle, "C/H Reward", 5, 50);
-addCheatos = forms.checkbox(handle, "+ Cheatos", 5, 75);
-addHoney = forms.checkbox(handle, "+ HCombs", 5, 100);
-jinjoRandom = forms.checkbox(handle, "Jinjos", 5, 125);
+noRewards = forms.checkbox(handle, " >>> ", 5, 50);
+addCheatos = forms.checkbox(handle, " >>> ", 5, 75);
+addHoney = forms.checkbox(handle, " >>> ", 5, 100);
+jinjoRandom = forms.checkbox(handle, " >>> ", 5, 125);
+addClockworks = forms.checkbox(handle, " >>> ", 5, 150);
 
+local labels = forms.pictureBox(handle, 0, 0, 600, 200);
+forms.drawText(labels,120,0,"Seed for the Randomizer",nil,nil,18);
+forms.drawText(labels,120,25,"Amount of Bosses Required to Open Hag 1",nil,nil,18);
+forms.drawText(labels,120,50,"Adds HoneyComb/Cheato Rewards",nil,nil,18);
+forms.drawText(labels,120,75,"Adds Cheato Pages as Ability Locations",nil,nil,18);
+forms.drawText(labels,120,100,"Adds HoneyCombs as Ability Locations",nil,nil,18);
+forms.drawText(labels,120,125,"Randomizes the Jinjo Pattern",nil,nil,18);
+forms.drawText(labels,120,150,"Randomize Clockworks instead of at X Bosses",nil,nil,18);
 
-button = forms.button(handle, "Generate Seed",startRando,100,200);
+button = forms.button(handle, "Generate Seed",startRando,10,200);
 
 displayTextStage= 0;
 
@@ -2050,8 +2130,22 @@ while true do
         if checkFlag(0x5E,0) and flagsSet == false then
             firstTimeTexts();
             setFlag(0x78, 2);
+            setFlag(0x79,0);--byte=0x79, bit=0 0x82 > 3
+            setFlag(0x82,3);
             --set JWS
-            setFlag(0x04, 4);
+            --setFlag(0x04, 4);
+            --open levels
+
+            setFlag(0x6D, 2);
+            setFlag(0x6D, 3);
+            setFlag(0x6D, 4);
+            setFlag(0x6D, 5);
+            setFlag(0x6D, 6);
+            setFlag(0x6D, 7);
+            setFlag(0x6E, 0);
+            setFlag(0x6E, 1);
+            setFlag(0x6E, 2);
+            setFlag(0x6E, 3);
             --set CK warps
             setFlag(0x75, 4);
             setFlag(0x75, 5);
@@ -2062,7 +2156,7 @@ while true do
             
         end
         setRNGOutcome("Jinjo Colours", patternNum);
-        
+        openHag1();
         --print("loop");
         --First time checks
        
